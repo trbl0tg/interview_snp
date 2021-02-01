@@ -13,7 +13,7 @@ public class OfficeEntityDeserializer implements EntityDeserializer {
     public <T> List<T> deserialize(String filename, Class<T> typeOf) throws FileNotFoundException {
         final Deserializer deserializer = CsvIOFactory.createFactory(typeOf).createDeserializer();
         final ArrayList<T> deserializeObjectsList = new ArrayList<>();
-        deserializer.open(new FileReader(filename));
+        deserializer.open(new FileReader(DEFAULT_RECOURSE_PATH + filename));
         deserializer.next(); // skip column names row
         while (deserializer.hasNext()) {
             deserializeObjectsList.add(deserializer.next());
