@@ -1,0 +1,8 @@
+[John Smith Management
+, Pete Hallock Marketing
+, Freddie Ruckman Production
+, Lee Alen Production
+, Paul Miller Finance
+, David King Production
+, Nicol Green Management
+]
